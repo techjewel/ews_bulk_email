@@ -1,0 +1,53 @@
+.wau_boxlen{
+	width:100%;
+}
+#wau_role{
+height: 120px;
+}
+.wau_cont{
+  text-align:center;
+}
+#example_wrapper, #example1_wrapper ,#example4_wrapper{
+    background-color: #F9F9F9;
+    border: 2px solid #CECECE;
+    padding: 10px;
+    width: 97%;
+}
+#example2_wrapper{
+	 background-color: #F9F9F9;
+    border: 2px solid #CECECE;
+    padding: 10px;
+    width: 90%;
+    margin-top:13px;
+}
+#example3_wrapper{
+	background-color: #F9F9F9;
+    border: 2px solid #CECECE;
+    padding: 10px;
+    width: 160%;
+}
+.role_wau_boxlen_csv{
+	width:179%;
+	margin-left: -10px;
+}
+textarea{
+	width:40%;
+	height: 150px;
+	padding: 15px;
+	margin-top: 10px;
+	border-radius:5px;
+	margin-bottom: 20px;
+	resize:none;
+}
+.wau_form{
+	width: 80%; 
+	padding: 0px 30px;
+}
+/*Show table */
+
+#show_table th td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #FFFFFF;    
+}
