@@ -147,6 +147,14 @@ if( isUrl(filename_id) ){
   });
 }
 });
+
+weu('#wau_template_single').on( 'change', function(){
+    if(weu('option:selected', this).val() != 0){
+        weu('#weu_temp_name').val(weu('option:selected', this).text());
+    } else {
+        weu('#weu_temp_name').val('');
+    }
+});
 /*for Autoresponder Page Template Send Email for */
 weu('#email_role').click(function(){  
 var filename_id = weu('#email_role').val();

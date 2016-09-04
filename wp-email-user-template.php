@@ -47,8 +47,15 @@ if(isset($_POST['save_template']) && $_POST['save_template'] == 'Save'){
             // create if new template
             $template_result = $wpdb->query($wpdb->prepare( "INSERT INTO `".$table_name."`(`template_key`, `template_value`, `status`) VALUES (%s,%s,%s)", $temp_name,stripcslashes($_POST['weu_show_area']),'template'));
         } else {
-            // @todo: Update the exiting template where id = $template_id
-        }
+			$template_result = $wpdb->update( 
+					$table_name, 
+					array(
+						'template_key' 		=> $temp_name,
+						'template_value'	=> stripcslashes($_POST['weu_show_area'])
+					), 
+					array( 'ID' => $template_id ) 
+				);
+		}
 
         if($template_result==1){
             echo '<div id="message1" class="updated notice is-dismissible"><p>Your Template has been Saved.</p><button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div>';
